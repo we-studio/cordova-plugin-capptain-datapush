@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-capptain-datapush"
+        version="0.1.0">
+
+    <name>Cordova Capptain Data Push Plugin</name>
+    
+    <author>Westudio</author>
+    
+    <description>Cordova Capptain Data Push Plugin</description>
+    
+    <keywords>wemanity,westudio,westud.io,cordova,capptain,reach,data push</keywords>
+
+    <js-module src="www/CapptainDataPushPlugin.js" name="CapptainDataPushPlugin">
+        <clobbers target="window.CapptainDataPushPlugin" />
+        <clobbers target="CapptainDataPushPlugin" />
+    </js-module>
+
+    <dependency id="cordova-plugin-ms-capptain" />
+
+    <config-file target="config.xml" parent="/*">
+        <feature name="CapptainDataPushPlugin">
+            <param name="ios-package" value="CapptainDataPushPlugin"/>
+        </feature>
+    </config-file>
+
+    <!-- ios -->
+    <platform name="ios">
+
+        <header-file src="src/ios/CapptainDataPushPlugin.h" />
+        <source-file src="src/ios/CapptainDataPushPlugin.m" />
+
+    </platform>
+
+</plugin>
