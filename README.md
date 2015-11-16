@@ -1,4 +1,5 @@
-# cordova-plugin-capptain-datapush
+![Cordova+Capptain-Reach](https://raw.githubusercontent.com/we-studio/cordova-plugin-capptain-datapush/master/logo.jpg)
+
 Cordova Plugin for Capptain Reach Data Push.
 
 
